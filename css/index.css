@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+ul[class],
+li {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin-top: 10px;
+  background-color: #008cba;
+  border: none;
+  color: white;
+  font-size: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  max-width: fit-content;
+  border: 1px solid #008cba;
+}
+
+button:hover {
+  border: 1px solid #000;
+  color: #000;
+}
+
+input {
+  margin: 5px 10px 5px 0;
+  border: 0;
+  padding: 0 10px;
+  line-height: 36px;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  background-color: #3cbc8d;
+  color: white;
+  max-width: 200px;
+}
+
+/* Убираем стрелки-кнопки в input type=number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  max-height: 100vh;
+}
+
+.wrapper__title {
+  margin-top: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* .wrapper__title::before {
+  content: '💊 ';
+}
+
+.wrapper__title::after {
+  content: ' 💊';
+} */
+
+hr {
+  border-top: 1px dashed #808080;
+  width: 80%;
+}
+
+/* Панель управления */
+.panel__wrapper {
+  flex-basis: 20%;
+  min-width: 300px;
+  max-height: inherit;
+  overflow: hidden;
+  background: aliceblue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-left: 8px dotted #fff;
+}
+
+.sort__kind, .sort__time {
+  font-weight: 700;
+  color: darkviolet ;
+}
+
+.panel__devtools {
+  display: flex;
+  min-width: 265px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.line {
+  margin: 10px auto 5px;
+}
+
+.reset__btn {
+  color: #000;
+  background-color: firebrick;
+  line-height: 1.4;
+  border: 1px solid #000;
+}
+
+.reset__btn:hover {
+  color: orange;
+  border: 1px dotted yellow;
+  background: darkgreen;
+}
+
+.reset__btn::after {
+  content: '🌵 Сбросить 🌵';
+}
+
+.reset__btn:hover::after {
+  content: '⚡ Exo  Fru ⚡';
+}
+
+/* Список экзотических фруктов */
+.fruits__wrapper {
+  flex-basis: 80%;
+  min-width: 400px;
+  background: #fff;
+  max-height: inherit;
+  overflow: hidden;
+}
+
+.fruits__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: inherit;
+  overflow-y: auto;
+  padding: 15px;
+}
+
+.fruit__item {
+  margin: 10px;
+  padding: 10px;
+  width: fit-content;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.fruit__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #fff;
+  height: 100%;
+  padding: 10px;
+}
+
+/* Цвета карточек фруктов */
+.fruit_red {
+  background: #f00;
+}
+
+.fruit_orange {
+  background: #ff8c00;
+}
+
+.fruit_yellow {
+  background: #ffd800;
+}
+
+.fruit_green {
+  background: #84cd1b;
+}
+
+.fruit_blue {
+  background: #87cefa;
+}
+
+.fruit_indigo {
+  background: #000bff;
+}
+
+.fruit_violet {
+  background: #8b00ff;
+}
+
+.fruit_grey {
+  background: #d3d3d3;
+}
+
+/* .fruit_carmazin {
+  background: #dc143c;
+} */
+
+/* .fruit_lightbrown {
+  background: #cd853f;
+} */
+
+
+
